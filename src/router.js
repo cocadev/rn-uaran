@@ -12,13 +12,13 @@ const AuthNavigator = createStackNavigator(
   {
     Splash: {screen: splashScreen},
     Login: {screen: loginScreen},
+    Register: {screen: registerScreen},
     ForgotPassword: {screen: forgotPasswordScreen},
     ResetPassword: {screen: resetPasswordScreen},
-    Register: {screen: registerScreen},
   },
   {
     headerMode: 'none',
-    initialRouteName: 'Login',
+    initialRouteName: 'Register',
   },
 );
 

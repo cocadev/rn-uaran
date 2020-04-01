@@ -8,36 +8,41 @@ const loginScreen = props => {
   return (
     <>
       <SafeAreaView style={styles.container}>
-          <Image source={images.logo} style={{ width: 80, height: 80}}/>
-          <CText 
-            title={'Login to\nyour Narau account'} 
-            color={COLORS.title} 
-            fontSize={24} 
-            lineHeight={36}
-            marginTop={100}
+        <Image source={images.logo} style={{ width: 80, height: 80 }} />
+        <CText
+          title={'Login to\nyour Narau account'}
+          color={COLORS.title}
+          fontSize={24}
+          lineHeight={36}
+          marginTop={100}
+        />
+        <TextInput
+          label='Email'
+          placeholder={'Email'}
+          style={styles.input}
+        />
+        <TextInput
+          label='Password'
+          placeholder={'Password'}
+          style={styles.input}
+        />
+        <View style={styles.box}>
+          <CText title={'Forgot Password? Reset'} fontSize={14} />
+        </View>
+        <View style={styles.btn}>
+          <CText
+            title={'Login'}
+            color={COLORS.white}
+            fontSize={14}
+            fontWeight={'500'}
           />
-          <TextInput
-            label='Email'
-            placeholder={'Email'}
-            style={styles.input}
-          />
-          <TextInput
-            label='Password'
-            placeholder={'Password'}
-            style={styles.input}
-          />
-          <View style={styles.box}>
-            <CText title={'Forgot Password? Reset'} fontSize={14}/>
-          </View>
-          <View style={styles.btn}>
-            <CText title={'Login'} color={COLORS.white} fontSize={14} fontWeight={'500'}/>
-          </View>
-          <TouchableOpacity 
-            style={styles.bottom}
-            onPress={()=>props.navigation.replace('Register')}
-          >
-            <CText title={'First time here? Sign up'} color={COLORS.sky} fontSize={14} marginTop={52}/>
-          </TouchableOpacity>
+        </View>
+        <TouchableOpacity
+          style={styles.bottom}
+          onPress={() => props.navigation.replace('Register')}
+        >
+          <CText title={'First time here? Sign up'} color={COLORS.sky} fontSize={14} marginTop={52} />
+        </TouchableOpacity>
       </SafeAreaView>
     </>
   );
@@ -49,7 +54,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 30,
+    margin: 30,
   },
   input: {
     borderBottomColor: COLORS.bottom,
