@@ -13,5 +13,11 @@ export const images = {
     splash: require('../../assets/splash.png'),
     table: require('../../assets/table.png'),
     next: require('../../assets/next.png'),
+
+    account: require('../../assets/account.png'),
+    search: require('../../assets/search.png'),
+    bookings: require('../../assets/bookings.png'),
+    inbox: require('../../assets/inbox.png'),
+
   };
   

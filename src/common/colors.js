@@ -4,6 +4,8 @@ export const COLORS = {
     lightgrey: '#f9f9f9',
     white: '#FFFFFF',
     dark: '#000000',
-    sky: '#0091ff'
+    sky: '#0091ff',
+    blue: '#0029ff',
+    opacity: '#919395'
   };
   

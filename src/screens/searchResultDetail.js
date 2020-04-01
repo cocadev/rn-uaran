@@ -15,6 +15,7 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { CText } from '../components/text';
 import { width, height, PLACES } from '../common/static';
 import { images } from '../common/images';
+import Slider from "react-native-slider";
 
 const SearchResultDetailScreen = () => {
   const [nestedScrollEnabled, setNestedScrollEnabled] = useState(false);
@@ -83,12 +84,21 @@ const SearchResultDetailScreen = () => {
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', elevation: 3 }}>
             <View style={{ flexDirection: 'row' }}>
               <MaterialCommunityIcons name="map-marker" size={18} style={{ opacity: 0.5, marginLeft: -5 }} />
-              <CText title={'buckingham palace, westminster, lon…'} fontSize={13} />
+              <CText
+                title={'buckingham palace, westminster, lon…'}
+                fontSize={13}
+              />
             </View>
-            
+
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
               <MaterialCommunityIcons name="lead-pencil" size={18} color={'#0029ff'} />
-              <CText title={'Modify'} fontFamily={'Rubik-Medium'} color={'#0029ff'} marginLeft={3} fontWeight={'500'} />
+              <CText
+                title={'Modify'}
+                fontFamily={'Rubik-Medium'}
+                color={'#0029ff'}
+                marginLeft={3}
+                fontWeight={'500'}
+              />
             </View>
           </View>
         </Callout>
@@ -97,14 +107,14 @@ const SearchResultDetailScreen = () => {
           initialOffsetFromBottom={0.5}
           ref={ref => (actionSheet = ref)}
           bounceOnOpen={true}
-          bounciness={8}
-          gestureEnabled={true}
+          bounciness={1}
+          // gestureEnabled={true}
           onClose={_onClose}
 
           defaultOverlayOpacity={0.3}>
           <ScrollView
             nestedScrollEnabled={true}
-            scrollEnabled={nestedScrollEnabled}
+            // scrollEnabled={nestedScrollEnabled}
             style={{
               width: '100%',
               height: 400,
@@ -112,7 +122,13 @@ const SearchResultDetailScreen = () => {
               paddingRight: 0
             }}>
 
-            <CText title={'HubbleHQ'} fontFamily={'Rubik-Medium'} fontSize={20} marginBottom={8} fontWeight={'500'} />
+            <CText
+              title={'HubbleHQ'}
+              fontFamily={'Rubik-Medium'}
+              fontSize={20}
+              marginBottom={8}
+              fontWeight={'500'}
+            />
 
             <View style={{ flexDirection: 'row' }}>
               <Ionicons name="ios-star" size={18} color={'yellow'} />
@@ -120,7 +136,11 @@ const SearchResultDetailScreen = () => {
               <Ionicons name="ios-star" size={18} color={'yellow'} />
               <Ionicons name="ios-star" size={18} color={'yellow'} />
               <Ionicons name="ios-star-half" size={18} color={'yellow'} />
-              <CText title={'4.5'} fontSize={14} marginLeft={3} />
+              <CText
+                title={'4.5'}
+                fontSize={14}
+                marginLeft={3}
+              />
             </View>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 15 }}>
@@ -128,7 +148,12 @@ const SearchResultDetailScreen = () => {
 
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Feather name="corner-left-down" size={12} style={{ opacity: 0.5 }} />
-                <CText title={'GET DIRECTION'} fontSize={11} marginLeft={3} marginRight={20} />
+                <CText
+                  title={'GET DIRECTION'}
+                  fontSize={11}
+                  marginLeft={3}
+                  marginRight={20}
+                />
               </View>
             </View>
 
@@ -139,42 +164,90 @@ const SearchResultDetailScreen = () => {
               <Image source={images.demo4} style={styles.img} />
             </ScrollView>
 
-            <CText title={'Space Available'} fontSize={16} fontFamily={'Rubik-Medium'} marginTop={14} fontWeight={'500'} />
+            <CText
+              title={'Space Available'}
+              fontSize={16}
+              fontFamily={'Rubik-Medium'}
+              marginTop={14}
+              fontWeight={'500'}
+            />
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 8 }}>
-              <CText title={'7 Desks available'} fontSize={13} />
-              <CText title={'£350 / person'} fontSize={13} fontFamily={'Rubik-Medium'} fontWeight={'500'} marginRight={20} />
+              <CText
+                title={'7 Desks available'}
+                fontSize={13}
+              />
+              <CText
+                title={'£350 / person'}
+                fontSize={13}
+                fontFamily={'Rubik-Medium'}
+                fontWeight={'500'}
+                marginRight={20}
+              />
             </View>
 
-            <CText title={'Amenities'} fontSize={16} fontFamily={'Rubik-Medium'} marginTop={14} fontWeight={'500'} />
+            <CText
+              title={'Amenities'}
+              fontSize={16}
+              fontFamily={'Rubik-Medium'}
+              marginTop={14}
+              fontWeight={'500'}
+            />
 
             <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 13 }}>
               <EvilIcons name="check" size={18} />
-              <CText title={'Free Wifi'} fontSize={13} marginLeft={3} />
+              <CText
+                title={'Free Wifi'}
+                fontSize={13}
+                marginLeft={3}
+              />
             </View>
 
             <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 13 }}>
               <EvilIcons name="check" size={18} />
-              <CText title={'Coffee & Tea Machines'} fontSize={13} marginLeft={20} />
+              <CText
+                title={'Coffee & Tea Machines'}
+                fontSize={13}
+                marginLeft={20}
+              />
             </View>
 
             <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 13 }}>
               <EvilIcons name="check" size={18} />
-              <CText title={'Meeting Rooms'} fontSize={13} marginLeft={3} />
+              <CText
+                title={'Meeting Rooms'}
+                fontSize={13}
+                marginLeft={3}
+              />
             </View>
 
-            <View style={{ height: 60 }} />
+            <View style={{ height: 70 }} />
 
           </ScrollView>
 
           <View style={styles.bottom}>
             <View style={styles.chatBtn}>
-              <Image source={images.chat} style={{ width: 15, height: 13 }} />
-              <CText title={'Chat'} fontSize={14} marginLeft={5} lineHeight={16} />
+              <Image
+                source={images.chat}
+                style={{ width: 15, height: 13 }}
+              />
+              <CText
+                title={'Chat'}
+                fontSize={14}
+                marginLeft={5}
+                lineHeight={16}
+              />
             </View>
 
             <View style={styles.bookBtn}>
-              <CText title={'Book Now'} fontSize={14} fontFamily={'Rubik-Medium'} lineHeight={16} fontWeight={'500'} color={'#fff'} />
+              <CText
+                title={'Book Now'}
+                fontSize={14}
+                fontFamily={'Rubik-Medium'}
+                lineHeight={16}
+                fontWeight={'500'}
+                color={'#fff'}
+              />
             </View>
 
           </View>
@@ -227,12 +300,12 @@ const styles = StyleSheet.create({
     shadowColor: 'rgba(0, 0, 0, 0.1)',
     shadowOffset: { width: -4, height: 4 },
     shadowRadius: 15,
-    backgroundColor: 'red',
+    backgroundColor: '#fff',
     position: 'absolute',
-    bottom: 40,
+    bottom: 0,
     height: 80,
     width,
-    elevation: 5
+    elevation: 12
   },
   chatBtn: {
     flexDirection: 'row',
