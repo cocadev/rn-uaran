@@ -34,7 +34,7 @@ const HomeNavigator = createStackNavigator(
 
 export const Router = createAppContainer(
   createSwitchNavigator({
-    Auth: AuthNavigator,
+    // Auth: AuthNavigator,
     Home: HomeNavigator,
   }),
 );
