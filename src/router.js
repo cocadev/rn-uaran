@@ -23,7 +23,7 @@ const AuthNavigator = createStackNavigator(
   },
   {
     headerMode: 'none',
-    initialRouteName: 'Register',
+    initialRouteName: 'Splash',
   },
 );
 
@@ -170,7 +170,7 @@ const AppStack = createBottomTabNavigator(
 
 export const Router = createAppContainer(
   createSwitchNavigator({
-    // Auth: AuthNavigator,
+    Auth: AuthNavigator,
     // Home: HomeNavigator,
     App: AppStack,
   }),

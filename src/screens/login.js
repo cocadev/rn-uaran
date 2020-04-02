@@ -29,14 +29,16 @@ const loginScreen = props => {
         <View style={styles.box}>
           <CText title={'Forgot Password? Reset'} fontSize={14} />
         </View>
-        <View style={styles.btn}>
+        <TouchableOpacity style={styles.btn}
+          onPress={() => props.navigation.replace('App')}
+        >
           <CText
             title={'Login'}
             color={COLORS.white}
             fontSize={14}
             fontWeight={'500'}
           />
-        </View>
+        </TouchableOpacity>
         <TouchableOpacity
           style={styles.bottom}
           onPress={() => props.navigation.replace('Register')}
