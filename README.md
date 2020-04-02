@@ -1,4 +1,4 @@
-<h1 align="center"><b> Map Booking App</b> </h1>
+<h1 align="center"><b> Uaran Booking App</b> </h1>
 
 <p align="center">Have a truck and ready to take a load.? Log into your carrier app and go straight to the load board.!</p>
 
@@ -54,15 +54,15 @@
 
 ## :blush: **Overview?**
 
-Narau - THE APP FOR CARRIERS
+Uaran - THE APP FOR CARRIERS
 
 Use our advanced filters to sort through a multitude of loads placed by shippers and freight brokers alike.
 
 Negotiate.! Using our platform you can counter and accept offers from shippers. You only settle on a price after both parties have ‘accepted’ it, in other words, the load is assigned after the ‘dual handshake’ is complete.
 
 
-What is Narau.?
-Narau is an app which connects shippers to carriers. A shipper places his load on the load board, after which a carrier can view the details of the load. The carrier can then decide whether to accept the offer or counter it with an offer of his own. The shipper and the carrier negotiate until a price has been agreed upon by both parties and the ‘dual handshake’ is complete.
+What is Uaran.?
+Uaran is an app which connects shippers to carriers. A shipper places his load on the load board, after which a carrier can view the details of the load. The carrier can then decide whether to accept the offer or counter it with an offer of his own. The shipper and the carrier negotiate until a price has been agreed upon by both parties and the ‘dual handshake’ is complete.
 
 After this the Load is placed in the ‘My Jobs’ page of the carrier app, and the carrier can start the load. The carrier can upload a picture of the load during pick up. Once the carrier starts the load, he can either use google maps or waze for navigation. Once a load is complete, the receiver has to sign on the app, and the carrier can upload a picture of the load on the app. After this an invoice appears and the carrier can submit, after completion of the load.
 
@@ -80,8 +80,8 @@ After this the Load is placed in the ‘My Jobs’ page of the carrier app, and 
 
 #### 1) Clone & Install Dependencies
 
-- 1.1) `git clone https://github.com/kingofdevs/rn-narau.git`
-- 1.2) `cd rn-narau` - cd into your newly created project directory.
+- 1.1) `git clone https://github.com/kingofdevs/rn-uaran.git`
+- 1.2) `cd rn-uaran` - cd into your newly created project directory.
 - 1.3) Install NPM packages with `yarn install`
         **Note:** NPM has issues with React Native so `yarn` is recommended over `npm`.
 #### 2) Start your app
@@ -111,4 +111,4 @@ After this the Load is placed in the ‘My Jobs’ page of the carrier app, and 
 
 ## :eyes: **Version**
 - [x] React-Native-CLI 0.62.0
-- [] Expo 37
+- [ ] Expo 37
