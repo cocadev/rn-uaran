@@ -70,7 +70,7 @@ After this the Load is placed in the ‘My Jobs’ page of the carrier app, and 
 
 -   [x] Make it work on IOS
 -   [x] Make it work on Android
--   [x] Make it work on Expo
+-   [x] Make it work on React-Native-CLI
 -   [x] Transform into responsive
 -   [x] Update to latest React Native version
 
@@ -86,7 +86,7 @@ After this the Load is placed in the ‘My Jobs’ page of the carrier app, and 
         **Note:** NPM has issues with React Native so `yarn` is recommended over `npm`.
 #### 2) Start your app
 
-- 2.1) **[EXPO]** Build and run the iOS app, run `expo run-ios` (to run on simulator) or `expo --device` (to run on real device) from the root of your project. The first build will take some time.
+- 2.1) **[React-Native-CLI]** Build and run the iOS app, run `react-native run-ios` (to run on simulator) or `react-native --device` (to run on real device) from the root of your project. The first build will take some time.
 ## :zap: **Tech Stack**
 
 <h1 align="center">
