@@ -1,4 +1,4 @@
-<h1 align="center"><b> Uaran Booking App</b> </h1>
+<h1 align="center"><b> Uaran Booking Demo App</b> </h1>
 
 <p align="center">Have a truck and ready to take a load.? Log into your carrier app and go straight to the load board.!</p>
 
